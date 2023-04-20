@@ -1,6 +1,10 @@
 from data_print_results import print_result, anon_card, anon_check
 
 
+"""
+- тестирование с pytest
+- результат тестирования в файле pytests.txt
+"""
 def test_print_result():
     assert print_result(
         [
