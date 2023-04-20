@@ -1,9 +1,5 @@
 from data_print_results import print_result, anon_card, anon_check
-import main
 
-
-if __name__ == "__main__":
-    main.main()
 
 def test_print_result():
     assert print_result(
