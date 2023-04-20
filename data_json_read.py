@@ -1,6 +1,8 @@
 import json
 
-
+"""
+- считывание и сортировка по дате
+"""
 def sort_in_date():
     data_sort = []
     with open('operations.json', 'r', encoding="utf8") as json_file:
@@ -14,7 +16,11 @@ def sort_in_date():
 
     return data_sort
 
-
+"""
+- реверс отсортированного списка
+- выбор из файла данных со значением 'EXECUTED' и датой эквивалентной из списка
+- первие пять словарей попадают в список last_5_data
+"""
 def last_5_executed_data(data_sort):
     data_sort.reverse()
     last_5_data = []
